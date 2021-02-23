@@ -51,6 +51,10 @@ namespace AliyunDomainDns
                     {
                         Log.Logger.Error($"主机记录：{item.RR},IP:{ip}，更新ip失败");
                     }
+                    else
+                    {
+                        Log.Logger.Information($"主机记录：{item.RR},IP:{ip}，更新成功");
+                    }
                 }
             }
         }

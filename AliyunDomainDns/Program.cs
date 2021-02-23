@@ -23,8 +23,10 @@ namespace AliyunDomainDns
                     retainedFileCountLimit: 31);
                 })
                 .CreateLogger();
+            Log.Logger.Information("正在启动。。。");
             DomainRecordOptions domainRecordOptions = new DomainRecordOptions();
             DomainRecord domainRecord = new DomainRecord(domainRecordOptions);
+            Log.Logger.Information("启动成功");
             while (true)
             {
                 try
