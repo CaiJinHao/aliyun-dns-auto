@@ -35,7 +35,8 @@ namespace AliyunDomainDns
                 }
                 catch (Exception ex)
                 {
-                    Log.Logger.Error(ex, "CheckAndModify");
+                    Log.Logger.Error(ex, "CheckAndModify Error");
+                    break;
                 }
                 Thread.Sleep(30000);
             }
