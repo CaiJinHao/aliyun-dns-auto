@@ -13,7 +13,7 @@ namespace AliyunDomainDns
     {
         private static readonly HttpClient client = new HttpClient();
 
-        public static async Task<string> GetIP_Sohu()
+        /*public static async Task<string> GetIP_Sohu()
         {
             CitySN ipObj = null;
             try
@@ -41,7 +41,7 @@ namespace AliyunDomainDns
             }
             
             return ipObj?.cip;
-        }
+        }*/
 
         public static async Task<string> GetIP_Amazon()
         {
