@@ -31,12 +31,12 @@ namespace AliyunDomainDns
             {
                 try
                 {
+                    Log.Logger.Information("开始检测");
                     domainRecord.CheckAndModify().Wait();
                 }
                 catch (Exception ex)
                 {
                     Log.Logger.Error(ex, "CheckAndModify Error");
-                    break;
                 }
                 Thread.Sleep(30000);
             }
