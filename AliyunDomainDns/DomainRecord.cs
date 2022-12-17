@@ -65,7 +65,7 @@ namespace AliyunDomainDns
                     {
                         //更新本地存储的dns,方便下次对比，保证和服务端一致
                         item._Value = ip;
-                        Log.Logger.Information($"更新主机记录：{item.RR},更新前IP:{item._Value},更新后IP:{ip}，");
+                        //Log.Logger.Information($"更新主机记录：{item.RR},更新前IP:{item._Value},更新后IP:{ip}，");
                     }
                 }
             }

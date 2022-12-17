@@ -31,7 +31,7 @@ namespace AliyunDomainDns
             {
                 try
                 {
-                    Log.Logger.Information("开始检测");
+                    //Log.Logger.Information("开始检测");
                     domainRecord.CheckAndModify().Wait();
                 }
                 catch (Exception ex)
