@@ -30,10 +30,10 @@ namespace AliyunDomainDns
             client = new DefaultAcsClient(profile);
             request = new DescribeDomainRecordsRequest();
 
-            //request.Url = "http://domain.aliyuncs.com/";
+            request.Url = "http://domain.aliyuncs.com/";
             request.DomainName = Options.DomainName;
             request.TypeKeyWord = Options.DomainType;
-            //request.ActionName = "DescribeDomainRecords";
+            request.ActionName = "DescribeDomainRecords";
 
             var response = client.GetAcsResponse(request);
             describeDomainRecords_Records = response.DomainRecords;
